@@ -56,8 +56,13 @@ variable "NETWORK_PORTS" {
   type = list(string)
 }
 
+#? Firewall variables
+variable POLICY_NAME {
+  type = string
+}
+
 #? Startup Script
-variable "STARTUP_SCRIPT" {
+variable "STARTUP_SCRIPT_FILE" {
   type = string
 }
 
