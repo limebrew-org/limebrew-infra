@@ -4,11 +4,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "4.21.0"
-    }
-    tls = {
-      source  = "hashicorp/tls"
-      version = "3.1.0"
+      version = "4.55.0"
     }
   }
 }

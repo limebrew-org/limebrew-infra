@@ -5,6 +5,3 @@ provider "google" {
   region      = var.REGION
   zone        = var.ZONE
 }
-
-#TODO: Initialize tls provider
-provider "tls" {}
