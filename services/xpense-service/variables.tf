@@ -49,6 +49,9 @@ variable "MEMORY" {
 variable "CPU_COUNT" {
   type = string
 }
+variable "CPU_ALWAYS_ALLOCATED" {
+  type = bool
+}
 variable "MAX_INSTANCE_REQUEST_CONCURRENCY" {
   type = string
 }

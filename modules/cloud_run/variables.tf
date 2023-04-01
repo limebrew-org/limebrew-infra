@@ -34,10 +34,16 @@ variable "vmemory_limit" {
 variable "vcpu_count" {
   type = string
 }
+variable "vcpu_always_allocated" {
+  type = bool
+}
 variable "max_instance_concurrency" {
   type = string
 }
 variable "traffic_percent" {
+  type = string
+}
+variable "traffic_type" {
   type = string
 }
 variable "egress_type" {
@@ -45,9 +51,6 @@ variable "egress_type" {
 }
 variable "is_latest_revision" {
   type = bool
-}
-variable "traffic_type" {
-  type = string
 }
 variable "env_variables" {
   type    = map(string)

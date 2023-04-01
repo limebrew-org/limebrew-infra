@@ -15,6 +15,7 @@ module "cloud_run" {
   egress_type              = var.SERVICE_EGRESS_TYPE
   vmemory_limit            = var.MEMORY
   vcpu_count               = var.CPU_COUNT
+  vcpu_always_allocated    = var.CPU_ALWAYS_ALLOCATED
   traffic_percent          = var.TRAFFIC_PERCENT
   traffic_type             = var.TRAFFIC_TYPE
   is_latest_revision       = var.IS_LATEST_REVISION

@@ -36,6 +36,7 @@ resource "google_cloud_run_v2_service" "service" {
           "memory" = var.vmemory_limit
           "cpu"    = var.vcpu_count
         }
+        cpu_idle = !var.vcpu_always_allocated
       }
 
       ports {
